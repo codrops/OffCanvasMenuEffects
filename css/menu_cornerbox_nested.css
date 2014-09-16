@@ -1,0 +1,292 @@
+html, 
+body, 
+.container, 
+.content-wrap {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	background: #373a47;
+}
+
+.menu-wrap {
+	color: #64697d;
+}
+
+.menu-wrap a {
+	color: #b8b7ad;
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+	color: #c94e50;
+}
+
+.content-wrap {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.content {
+	position: relative;
+	background: #b4bad2;
+}
+
+.content::before,
+.menu-wrap::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0s 0.5s;
+	transition: opacity 0.5s, transform 0s 0.5s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+/* Menu Button */
+.menu-button {
+	position: fixed;
+	z-index: 1000;
+	margin: 0.5em;
+	padding: 0;
+	border: none;
+	font-size: 3em;
+	color: #373a47;
+	background: transparent;
+}
+
+.menu-button span {
+	display: none;
+}
+
+.menu-button:hover,
+.close-button:hover {
+	opacity: 0.6;
+}
+
+/* Close Button */
+.close-button {
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	overflow: hidden;
+	text-indent: 1em;
+	border: none;
+	background: transparent;
+	color: transparent;
+}
+
+.close-button::before,
+.close-button::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	background: #bdc3c7;
+}
+
+.close-button::before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.close-button::after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/* Menu */
+.menu-wrap {
+	position: absolute;
+	z-index: 1001;
+	width: 50vw;
+	height: 50vw;
+	max-height: 80%;
+	min-height: 360px;
+	min-width: 320px;
+	background: #fff;
+	padding: 3em;
+	overflow: hidden;
+	-webkit-transform: translate3d(-100%,-100%,0);
+	transform: translate3d(-100%,-100%,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.menu-wrap[data-level="2"] {
+	height: 30vw;
+}
+
+.menu {
+	height: 100%;
+}
+
+.menu h2 {
+	margin: 0 0 0.5em 0;
+}
+
+.menu h2 span {
+	padding-right: 1em;
+}
+
+.menu h2 span:last-child {
+	font-size: 0.5em;
+	padding: 0.25em 0.5em;
+	display: inline-block;
+	vertical-align: middle;
+	color: rgb(218,73,97);
+	border: 2px solid black;
+	border-color: initial;
+}
+
+/* Calendario style http://tympanus.net/codrops/2012/11/27/calendario-a-flexible-calendar-plugin/ */
+.fc-calendar-container {
+	height: 80%;
+	height: calc(100% - 4.5em);
+	margin-top: 2em;
+	width: 100%;
+	position: relative;
+}
+
+.fc-calendar {
+	width: 100%;
+	height: 100%;
+}
+
+.fc-calendar .fc-head {
+	height: 35px;
+	text-transform: uppercase;
+	line-height: 30px;
+	letter-spacing: 1px;
+	font-size: 0.75em;
+}
+
+.fc-calendar .fc-row > div, 
+.fc-calendar .fc-head > div {
+	float: left;
+	height: 100%;
+	width: 14%;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fc-calendar .fc-head > div {
+	border-bottom: 1px solid #000;
+	border-bottom-color: initial;
+}
+
+.fc-calendar .fc-body,
+.content-edit {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	height: calc(100% - 35px);
+}
+
+.content-edit {
+	height: calc(100% - 80px);
+	border: 1px solid #000;
+	border-color: initial;
+	padding: 2em;
+}
+
+.content-edit:focus {
+	outline: none;
+}
+
+.default-button {
+	border: none;
+	color: #fff;
+	background: #64697d;
+	padding: 1em 1.25em;
+	font-weight: 700;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 0.75em;
+	float: right;
+}
+
+.fc-calendar .fc-row {
+	width: 100%;
+}
+
+.fc-five-rows .fc-row {
+	height: 20%;
+}
+
+.fc-calendar .fc-row > div {
+	cursor: pointer;
+	padding: 4px;
+	overflow: hidden;
+	position: relative;
+}
+
+.fc-calendar .fc-row > div:not(:empty):hover {
+	background: rgba(180,186,210,0.3);
+}
+
+.fc-calendar .fc-row > div > span.fc-date {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #686a6e;
+	bottom: 5px;
+	right: 5px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	margin: -10px 0 0 -15px;
+}
+
+.fc-calendar .fc-row > div > span.fc-weekday {
+	display: none;
+}
+
+/* Shown menu */
+.show-menu .menu-wrap[data-level="1"],
+.show-submenu .menu-wrap[data-level="2"],
+.show-menu .content::before,
+.show-submenu .menu-wrap[data-level="1"]::before {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.show-submenu .menu-wrap[data-level="1"],
+.show-menu .content-wrap {
+	-webkit-transform: translate3d(40px,40px,0);
+	transform: translate3d(40px,40px,0);
+}
+
+.show-submenu .content-wrap {
+	-webkit-transform: translate3d(120px,120px,0);
+	transform: translate3d(120px,120px,0);
+}
+
+.show-menu .content::before,
+.show-submenu .menu-wrap[data-level="1"]::before {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.show-submenu .content::before {
+	opacity: 1;
+}

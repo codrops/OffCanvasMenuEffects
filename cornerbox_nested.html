@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Off-Canvas Menu Effects - Nested Corner Box</title>
+		<meta name="description" content="Modern effects and styles for off-canvas navigation with CSS transitions and SVG animations using Snap.svg" />
+		<meta name="keywords" content="sidebar, off-canvas, menu, navigation, effect, inspiration, css transition, SVG, morphing, animation" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu_cornerbox_nested.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="menu-wrap" data-level="1">
+				<nav class="menu">
+					<h2><span>October 2014</span><span>Click on a date to enter the sub level</span></h2>
+					<!-- Calendar from Calendario: http://tympanus.net/codrops/2012/11/27/calendario-a-flexible-calendar-plugin/ -->
+					<div id="calendar" class="fc-calendar-container">
+						<div class="fc-calendar fc-five-rows">
+							<div class="fc-head">
+								<div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+							</div>
+							<div class="fc-body">
+								<div class="fc-row"><div><span class="fc-date">1</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">8</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Thu</span></div><div class="fc-today "><span class="fc-date">12</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">15</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">22</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">29</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Tue</span></div><div></div><div></div><div></div><div></div><div></div></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<button class="close-button" id="close-button">Close Menu</button>
+			</div>
+			<div class="menu-wrap" data-level="2">
+				<nav class="menu">
+					<h2>Add a diary entry</h2>
+					<div class="content-edit" contenteditable="true"></div>
+					<button class="default-button">Save entry</button>
+				</nav>
+				<button class="close-button" id="close-button-sub">Close Menu</button>
+			</div>
+			<button class="menu-button" id="open-button"><i class="fa fa-fw fa-pencil-square"></i><span>Open Menu</span></button>
+			<div class="content-wrap">
+				<div class="content">
+					<header class="codrops-header">
+						<div class="codrops-links">
+							<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/TabStylesInspiration/"><span>Previous Demo</span></a>
+							<a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20100"><span>Back to the Codrops Article</span></a>
+						</div>
+						<h1>Off-Canvas Menu Effects <span>Showing (off-canvas) menus stylishly</span></h1>
+						<nav class="codrops-demos">
+							<a href="index.html">Top Side</a>
+							<a href="sideslide.html">Side Slide</a>
+							<a href="cornerbox.html">Corner Box</a>
+							<a class="current-demo" href="cornerbox_nested.html">Nested Corner Box</a>
+							<a href="topexpand.html">Top Expand</a>
+							<a href="cornermorph.html">Corner Morph</a>
+							<a href="elastic.html">Elastic</a>
+							<a href="bubble.html">Bubble</a>
+							<a href="wave.html">Wave</a>
+						</nav>
+					</header>
+					<!-- Related demos -->
+					<section class="related">
+						<p>If you enjoyed this demo you might also like:</p>
+						<a href="http://tympanus.net/Development/SidebarTransitions/">
+							<img src="img/related/sidebartransitions.png" />
+							<h3>Transitions for Off-Canvas Navigations</h3>
+						</a>
+						<a href="http://tympanus.net/Development/PerspectivePageViewNavigation/">
+							<img src="img/related/PerspectiveNavigation.png" />
+							<h3>Perspective Page View Navigation</h3>
+						</a>
+					</section>
+				</div>
+			</div><!-- /content-wrap -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/main2.js"></script>
+	</body>
+</html>
