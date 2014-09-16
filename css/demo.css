@@ -101,9 +101,9 @@ section {
 /* Demo Buttons Style */
 .codrops-demos {
 	font-size: 1em;
-	max-width: 900px;
+	max-width: 1200px;
 	margin: 3em auto 5em;
-	padding: 2em 2em 0 2em;
+	padding: 2em 10em 0;
 }
 
 .codrops-demos > a {
@@ -128,7 +128,7 @@ section {
 /* Related demos */
 .related {
 	margin-top: 5em;
-	padding: 0 3em;
+	padding: 0 3em 5em;
 }
 
 .related p {
@@ -143,6 +143,7 @@ section {
 	padding: 25px;
 	border-radius: 35px/200px;
 	background: #fffce1;
+	max-width: 100%;
 }
 
 .related a img {
@@ -163,10 +164,26 @@ section {
 	text-align: left;
 }
 
+@media screen and (max-width: 40em) {
+	body {
+		font-size: 80%;
+	}
+	.codrops-header h1 {
+		font-size: 2.5em;
+	}
+	.codrops-demos {
+		max-width: 900px;
+		padding: 2em 2em 0;
+	}
+	.related > a {
+		margin: 20px 0;
+	}
+}
+
 @media screen and (max-width: 25em) {
 
 	.codrops-icon {
-		font-size: 150%;
+		font-size: 250%;
 	}
 
 	.codrops-icon span {
