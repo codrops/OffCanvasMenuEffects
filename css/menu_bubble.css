@@ -24,6 +24,8 @@ body,
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	-ms-transition: -ms-transform 0.4s;
 	transition: transform 0.4s;
 }
 
@@ -43,8 +45,12 @@ body,
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
+	-moz-transition: opacity 0.4s, -moz-transform 0s 0.4s;
+	-ms-transition: opacity 0.4s, -ms-transform 0s 0.4s;
 	transition: opacity 0.4s, transform 0s 0.4s;
 	-webkit-transform: translate3d(100%,0,0);
+	-moz-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
 }
 
@@ -105,11 +111,15 @@ body,
 
 .close-button::before {
 	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
 .close-button::after {
 	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -121,8 +131,12 @@ body,
 	height: 100%;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-280px,0,0);
+	-moz-transform: translate3d(-280px,0,0);
+	-ms-transform: translate3d(-280px,0,0);
 	transform: translate3d(-280px,0,0);
 	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	-ms-transition: -ms-transform 0.4s;
 	transition: transform 0.4s;
 }
 
@@ -136,8 +150,12 @@ body,
 .close-button {
 	opacity: 0;
 	-webkit-transform: translate3d(-160px,0,0);
+	-moz-transform: translate3d(-160px,0,0);
+	-ms-transform: translate3d(-160px,0,0);
 	transform: translate3d(-160px,0,0);
 	-webkit-transition: opacity 0s 0.3s, -webkit-transform 0s 0.3s;
+	-moz-transition: opacity 0s 0.3s, -moz-transform 0s 0.3s;
+	-ms-transition: opacity 0s 0.3s, -ms-transform 0s 0.3s;
 	transition: opacity 0s 0.3s, transform 0s 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(.17,.67,.1,1.27);
 	transition-timing-function: cubic-bezier(.17,.67,.1,1.27);
@@ -184,6 +202,8 @@ body,
 .show-menu .morph-shape,
 .show-menu .content::before {
 	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
@@ -191,6 +211,8 @@ body,
 .show-menu .close-button {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	-ms-transition: opacity 0.3s, -ms-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 	-webkit-transition-delay: 0.4s;
 	transition-delay: 0.4s;
