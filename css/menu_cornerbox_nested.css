@@ -28,6 +28,8 @@ body,
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
 	transition: transform 0.5s;
 }
 
@@ -48,8 +50,12 @@ body,
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.5s, -webkit-transform 0s 0.5s;
+	-moz-transition: opacity 0.5s, -moz-transform 0s 0.5s;
+	-ms-transition: opacity 0.5s, -ms-transform 0s 0.5s;
 	transition: opacity 0.5s, transform 0s 0.5s;
 	-webkit-transform: translate3d(100%,0,0);
+	-moz-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
 }
 
@@ -101,11 +107,15 @@ body,
 
 .close-button::before {
 	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
 .close-button::after {
 	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -122,8 +132,12 @@ body,
 	padding: 3em;
 	overflow: hidden;
 	-webkit-transform: translate3d(-100%,-100%,0);
+	-moz-transform: translate3d(-100%,-100%,0);
+	-ms-transform: translate3d(-100%,-100%,0);
 	transform: translate3d(-100%,-100%,0);
 	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
 	transition: transform 0.5s;
 }
 
@@ -266,17 +280,23 @@ body,
 .show-menu .content::before,
 .show-submenu .menu-wrap[data-level="1"]::before {
 	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
 .show-submenu .menu-wrap[data-level="1"],
 .show-menu .content-wrap {
 	-webkit-transform: translate3d(40px,40px,0);
+	-moz-transform: translate3d(40px,40px,0);
+	-ms-transform: translate3d(40px,40px,0);
 	transform: translate3d(40px,40px,0);
 }
 
 .show-submenu .content-wrap {
 	-webkit-transform: translate3d(120px,120px,0);
+	-moz-transform: translate3d(120px,120px,0);
+	-ms-transform: translate3d(120px,120px,0);
 	transform: translate3d(120px,120px,0);
 }
 

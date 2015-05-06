@@ -24,6 +24,8 @@ body,
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	-ms-transition: -ms-transform 0.3s;
 	transition: transform 0.3s;
 }
 
@@ -44,8 +46,12 @@ body,
 	content: '';
 	opacity: 0;
 	-webkit-transform: translate3d(100%,0,0);
+	-moz-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
 	-webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0s 0.3s;
+	-ms-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
 	transition: opacity 0.3s, transform 0s 0.3s;
 }
 
@@ -63,6 +69,8 @@ body,
 	color: transparent;
 	background: transparent;
 	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	-ms-transition: -ms-transform 0.3s;
 	transition: transform 0.3s;
 }
 
@@ -85,6 +93,8 @@ body,
 	font-weight: 700;
 	opacity: 0;
 	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
 	transition: opacity 1s;
 }
 
@@ -142,13 +152,19 @@ body,
 .show-menu .content-wrap,
 .show-menu .menu-button {
 	-webkit-transform: translate3d(300px,60px,0);
+	-moz-transform: translate3d(300px,60px,0);
+	-ms-transform: translate3d(300px,60px,0);
 	transform: translate3d(300px,60px,0);
 }
 
 .show-menu .content::before {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-ms-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }

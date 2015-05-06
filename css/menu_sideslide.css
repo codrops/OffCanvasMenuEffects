@@ -41,8 +41,13 @@ body,
 	content: '';
 	opacity: 0;
 	-webkit-transform: translate3d(100%,0,0);
+	-moz-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);	-moz-transition: opacity 0.3s, -moz-transform 0s 0.3s;
+	-ms-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
 	transform: translate3d(100%,0,0);
 	-webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
+	-moz-transition: opacity 0.4s, -moz-transform 0s 0.4s;
+	-ms-transition: opacity 0.4s, -ms-transform 0s 0.4s;
 	transition: opacity 0.4s, transform 0s 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -105,11 +110,15 @@ body,
 
 .close-button::before {
 	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
 .close-button::after {
 	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -123,8 +132,12 @@ body,
 	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-320px,0,0);
+	-moz-transform: translate3d(-320px,0,0);
+	-ms-transform: translate3d(-320px,0,0);
 	transform: translate3d(-320px,0,0);
 	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	-ms-transition: -ms-transform 0.4s;
 	transition: transform 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -137,6 +150,8 @@ body,
 
 .icon-list {
 	-webkit-transform: translate3d(0,100%,0);
+	-moz-transform: translate3d(0,100%,0);
+	-ms-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
 }
 
@@ -144,12 +159,16 @@ body,
 	display: block;
 	padding: 0.8em;
 	-webkit-transform: translate3d(0,500px,0);
+	-moz-transform: translate3d(0,500px,0);
+	-ms-transform: translate3d(0,500px,0);
 	transform: translate3d(0,500px,0);
 }
 
 .icon-list,
 .icon-list a {
 	-webkit-transition: -webkit-transform 0s 0.4s;
+	-moz-transition: -moz-transform 0s 0.4s;
+	-ms-transition: -ms-transform 0s 0.4s;
 	transition: transform 0s 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -188,6 +207,8 @@ body,
 /* Shown menu */
 .show-menu .menu-wrap {
 	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	-webkit-transition: -webkit-transform 0.8s;
 	transition: transform 0.8s;
@@ -198,8 +219,12 @@ body,
 .show-menu .icon-list,
 .show-menu .icon-list a {
 	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	-webkit-transition: -webkit-transform 0.8s;
+	-moz-transition: -moz-transform 0.8s;
+	-ms-transition: -ms-transform 0.8s;
 	transition: transform 0.8s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -207,15 +232,21 @@ body,
 
 .show-menu .icon-list a {
 	-webkit-transition-duration: 0.9s;
+	-moz-transition-duration: 0.9s;
+	-ms-transition-duration: 0.9s;
 	transition-duration: 0.9s;
 }
 
 .show-menu .content::before {
 	opacity: 1;
 	-webkit-transition: opacity 0.8s;
+	-moz-transition: opacity 0.8s;
+	-ms-transition: opacity 0.8s;
 	transition: opacity 0.8s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
